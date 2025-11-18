@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Captains</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="fade-in">🏏 Team Players</h1>
+</header>
+
+<section class="players-section animate-on-scroll">
+
+    <input type="text" id="playerSearch" placeholder="Search players..." class="search-bar">
+
+    <div class="player-grid">
+
+            <div class="player-card">
+            <div class="player-img">
+                <img src="assets/kohli.jpg" alt="Player"width="500" hegiht="500">
+            </div>
+            <h3>Virat Kohli</h3>
+            <span class="badge captain">RCB captain </span>
+            <p>Age: 37</p>
+        </div>
+
+        
+        <div class="player-card">
+            <div class="player-img">
+                <img src="assets/pandya.webp" alt="Player"width="500" hegiht="500">
+            </div>
+            <h3>Hardik pandya</h3>
+            <span class="badge captain"> MI captain </span>
+            <p>Age: 31</p>
+        </div>
+
+    </div>
+<div class="player-card">
+            <div class="player-img">
+                <img src="assets/dhoni.jpeg" alt="player"width="500" hegiht="500">
+            </div>
+            <h3>MS Dhoni</h3>
+            <span class="badge captain"> CSK captain</span>
+            <p>Age: 44</p>
+        </div>
+<div class="player-card">
+            <div class="player-img">
+                <img src="assets/patel.jpg" alt="Player"width="500" hegiht="500">
+            </div>
+            <h3>Axer patel</h3>
+            <span class="badge captain">DC captain</span>
+            <p>Age: 32</p>
+        </div>
+<div class="player-card">
+            <div class="player-img">
+                <img src="assets/rehane.jpg" alt="Player"width="500" hegiht="500">
+            </div>
+            <h3>Ajinkya Rahane</h3>
+            <span class="badge captain">KKR captain</span>
+            <p>Age: 32</p>
+        </div>
+<div class="player-card">
+            <div class="player-img">
+                <img src="assets/rishab.jpg" alt="Player"width="500" hegiht="500">
+            </div>
+            <h3>Rishab pant </h3>
+            <span class="badge captain">LSG captain</span>
+            <p>Age: 32</p>
+        </div>
+<div class="player-card">
+            <div class="player-img">
+                <img src="assets/gill.jpg" alt="Player"width="500" hegiht="500">
+            </div>
+            <h3>Shubman gill</h3>
+            <span class="badge captain">GT captain</span>
+            <p>Age: 32</p>
+        </div>
+<div class="player-card">
+            <div class="player-img">
+                <img src="assets/rrs.jpg" alt="Player"width="500" hegiht="500">
+            </div>
+            <h3>Sanju Samson</h3>
+            <span class="badge captain">RR captain</span>
+            <p>Age: 32</p>
+        </div>
+<div class="player-card">
+            <div class="player-img">
+                <img src="assets/shreyas.avif" alt="Player"width="500" hegiht="500">
+            </div>
+            <h3>Shreyas iyer</h3>
+            <span class="badge captain"> PBKS captain</span>
+            <p>Age: 32</p>
+        </div>
+<div class="player-card">
+            <div class="player-img">
+                <img src="assets/pat.avif" alt="Player"width="500" hegiht="500">
+            </div>
+            <h3>Pat Cummins</h3>
+            <span class="badge captain">SRH captain</span>
+            <p>Age: 32</p>
+        </div>
+
+
+</section>
+
+<script src="app.js"></script>
+<script>
+// Search filter for players
+document.getElementById("playerSearch").addEventListener("keyup", function () {
+    const filter = this.value.toLowerCase();
+    const players = document.querySelectorAll(".player-card");
+
+    players.forEach(card => {
+        const name = card.querySelector("h3").innerText.toLowerCase();
+        card.style.display = name.includes(filter) ? "block" : "none";
+    });
+});
+</script>
+
+</body>
+</html>

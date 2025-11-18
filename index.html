@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Universe | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar with enhanced features -->
+<nav class="navbar">
+    <div class="logo">IPL UNIVERSE</div>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li> 
+       <li><a href="teams.html">teams</a></li>
+        <li><a href="pagesplayers.html">captains</a></li>
+         <li class="dropdown">
+            <a href="stats.html" class="dropbtn">Stats ▼</a>
+            <div class="dropdown-content">
+                <a href="stats.html#batting">Batting Stats</a>
+                <a href="stats.html#bowling">Bowling Stats</a>
+                <a href="stats.html#team">Team Stats</a>
+            </div>
+        </li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+        <li>
+            <form class="search-form" onsubmit="return false;">
+                <input type="text" placeholder="Search players or teams...">
+                <button type="submit">🔍</button>
+            </form>
+        </li>
+
+        <li class="dropdown user-icon">
+            <a href="#" class="dropbtn">👤</a>
+            <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Language ▼</a>
+            <div class="dropdown-content">
+                <a href="#">English</a>
+                <a href="#">हिंदी</a>
+            </div>
+        </li>
+
+    </ul>
+</nav>
+
+<header class="hero">
+    <h1>Welcome to IPL Universe</h1>
+    <p>All IPL Teams, Players, Matches & Stats in one place.</p>
+</header>
+
+<section class="teams-section">
+    <h2>Explore Teams</h2>
+    <div class="teams-grid">
+        <div class="team-card"><img src="images/mi.png"><h3>Mumbai Indians</h3></div>
+        <div class="team-card"><img src="images/csk.jpg"><h3>Chennai Super Kings</h3></div>
+        <div class="team-card"><img src="images/rcb.jpg"><h3>RCB</h3></div>
+        <div class="team-card"><img src="images/kkr.avif"><h3>KKR</h3></div>
+        <div class="team-card"><img src="images/srh.jpeg"><h3>Sunrisers Hyderabad</h3></div>
+        <div class="team-card"><img src="images/rr.avif"><h3>Rajasthan Royals</h3></div>
+        <div class="team-card"><img src="images/dc.webp"><h3>Delhi Capitals</h3></div>
+        <div class="team-card"><img src="images/pbks.webp"><h3>Punjab Kings</h3></div>
+        <div class="team-card"><img src="images/LSG.jpeg"><h3>Lucknow Super Giants</h3></div>
+        <div class="team-card"><img src="images/gt.jpg"><h3>Gujarat Titans</h3></div>
+    </div>
+</section>
+
+<footer>
+    <h3>Contact Us</h3>
+    <p>Email: ipl@gmail.com</p>
+    <p>Phone: +91 9876543210</p>
+    <div class="social">
+        <a href="ipl">Instagram</a> |
+        <a href="ipl">Facebook</a> |
+        <a href="ipl">Twitter</a>
+    </div>
+</footer>
+
+</body>
+</html>
